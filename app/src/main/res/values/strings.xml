@@ -1,3 +1,110 @@
 <resources>
     <string name="app_name">F1 Companion</string>
+
+    <string-array name="image_thumbnail">
+        <item>https://docs.google.com/uc?id=1POOivPRB9dm1RRkGBfoOMfgAMnqu62UP</item>
+        <item>https://docs.google.com/uc?id=1SmdnNtZ-Rb6OmiwQueXlrh-g1HWKsFmo</item>
+        <item>https://docs.google.com/uc?id=1r3A6xhP_eD2GbZYfQPedMPV1Bd4MJi9n</item>
+        <item>https://docs.google.com/uc?id=1uD9cENLYhYXvxSj_czvmmK6xX4Wp-d0c</item>
+        <item>https://docs.google.com/uc?id=1h93gZaKaerBS9Ce-SVuEPeyFX-V4t358</item>
+        <item>https://docs.google.com/uc?id=1CJvSCM3g6GetUZqgz3t4Fb483c2L2c0a</item>
+        <item>https://docs.google.com/uc?id=10UyI_gy9kkkXw81hOm28MskzAsOqpNnp</item>
+        <item>https://docs.google.com/uc?id=1ta2e7Ssoi07mQr8y3I-HMF9cG-zBoh_9</item>
+        <item>https://docs.google.com/uc?id=1z6dDGfEbyXoa4ShQZD4cpZTYrbw6MORV</item>
+        <item>https://docs.google.com/uc?id=1BIK41Q74gmy6J0_7Z6BkGW9BrNMw7BHV</item>
+    </string-array>
+
+    <string-array name="image_banner">
+        <item>https://docs.google.com/uc?id=10weMifR8kC-3ZuFmzu71jBz_yUPqkaG2</item>
+        <item>https://docs.google.com/uc?id=1MvE7HKnfx4Ikl3bBGNUGLWhPYyasW9lc</item>
+        <item>https://docs.google.com/uc?id=1ElFpIiqHztNn02z48bmZ--rfjOMMiiR6</item>
+        <item>https://docs.google.com/uc?id=1f5v2ymToFDjd5pVhcpmlw-ZRba4yxWKg</item>
+        <item>https://docs.google.com/uc?id=1UcTKPVh3gsSXfmrtBhjKzrfflW1_gGW4</item>
+        <item>https://docs.google.com/uc?id=1J8ITOSEe9B-Xw3GWeFeJLkjOoZbPaGBr</item>
+        <item>https://docs.google.com/uc?id=1kFyUdAmMwK3OwKrOpVR55A_-vsu5FhaB</item>
+        <item>https://docs.google.com/uc?id=1kx9iTzuWy2pPtTXEbcjStzd-QSL05NZB</item>
+        <item>https://docs.google.com/uc?id=1FFughFFl5lj-qFu_7IrrRwkfIYsKMXeQ</item>
+        <item>https://docs.google.com/uc?id=1j0DbtFe3pPHBkBx3rA1PVTYQbr-idYJd</item>
+    </string-array>
+
+    <string-array name="image_header">
+        <item>https://docs.google.com/uc?id=1ZOHCCGaAga_163fTkRXNJSEamIq0PRe7</item>
+        <item>https://docs.google.com/uc?id=1JDu4AsBOJUindfKp437em-uitQKiBA74</item>
+        <item>https://docs.google.com/uc?id=1i4KzzfKRu_HKm6wnqGXBWqDfkPB-rCCb</item>
+        <item>https://docs.google.com/uc?id=1N_bJMM52PvdTNn49BcukXhhMp53G9QzR</item>
+        <item>https://docs.google.com/uc?id=1Bv_-p4KmBFKHezXIU1uWwkHKytFNu1I3</item>
+        <item>https://docs.google.com/uc?id=1GJkern0eA1LSc2YKg70FGf4_tsvPsTmQ</item>
+        <item>https://docs.google.com/uc?id=1VYwJz0F_wihfupF5ZaYnirFiBDN01hSS</item>
+        <item>https://docs.google.com/uc?id=12qdBFBcJGYeVpP2P3eXJlKpxn9NWWcP1</item>
+        <item>https://docs.google.com/uc?id=1Dc4wiai-QPq_cEMiBj1ucIpaaIyu7hg-</item>
+        <item>https://docs.google.com/uc?id=1DbG7A-Z2L88ZnoHzPoBy4yuIBDswLpad</item>
+    </string-array>
+
+    <string-array name="image_driver1">
+        <item>https://docs.google.com/uc?id=1NB0QKSor3Li2kFl4CcJBQFMpvXLkMTEz</item>
+        <item>https://docs.google.com/uc?id=15GJXHiJcWG5yPq8Sy1BGQjeR54Z61B8A</item>
+        <item>https://docs.google.com/uc?id=1NwqQhqatSJFCCteHWHhjVMoz05b25pxc</item>
+        <item>https://docs.google.com/uc?id=1CQNbxRA15mWHxIuY2wZzWmIGzCLmCV9o</item>
+        <item>https://docs.google.com/uc?id=1D5rVpAt4Oy_DXrxMIENNcu7Px7R5-2LL</item>
+        <item>https://docs.google.com/uc?id=1vlZGpYTJzjiDyc39t1s0uixq_2qSKVAV</item>
+        <item>https://docs.google.com/uc?id=16X52NGNTuvkGHggbpAPJVcuI6C5bL2LC</item>
+        <item>https://docs.google.com/uc?id=1JpQ-sw-pE7B_TWzs0KJMgqlnaKhGrRza</item>
+        <item>https://docs.google.com/uc?id=1onWhylsu-6j6F4dTrKmLp2j-USqlhBHj</item>
+        <item>https://docs.google.com/uc?id=1dw3N9LqtVVB_rD-j0dW5U6ZykQ7Xc9gz</item>
+    </string-array>
+
+    <string-array name="image_driver2">
+        <item>https://docs.google.com/uc?id=1UCl2TAmHw7fyA0PUWEkiR8-AETdiFVn4</item>
+        <item>https://docs.google.com/uc?id=1lAcvVFMddxg97KKCiR6uJV7C8nGmt5Jm</item>
+        <item>https://docs.google.com/uc?id=11sEp0NZ6TZTijqogv0gVFpZYcfwCKDH9</item>
+        <item>https://docs.google.com/uc?id=15l4LCsB6DGNpMqsbULINCbpBUwlOko_J</item>
+        <item>https://docs.google.com/uc?id=1jJcXu1zpZYMyeBvQME_wgy3BN8SZDhR4</item>
+        <item>https://docs.google.com/uc?id=1qKKt2KH0GDev8OBMrTVm6FEc2QGZXdgP</item>
+        <item>https://docs.google.com/uc?id=1JF4eRXzXur3D9p1cmlQJSsmxQo0vNDUb</item>
+        <item>https://docs.google.com/uc?id=1BrvVLDpH2edtgcHNsUl6O6ngn3bUYias</item>
+        <item>https://docs.google.com/uc?id=1d1D_NCejTTJ6rjT6FvWtim8o90oMW4tx</item>
+        <item>https://docs.google.com/uc?id=1ap1jjoCVqRjGD4KlkRWe15U_GrIsQD0y</item>
+    </string-array>
+
+    <string-array name="image_pic1">
+        <item>https://docs.google.com/uc?id=1YSshxt4qFCfS5bqvs1EwQmCayZDMHvAI</item>
+        <item>https://docs.google.com/uc?id=1og47D9xThYVE7xA9h9gTvRfDMhfcTWsj</item>
+        <item>https://docs.google.com/uc?id=145fWu5ALBtbG8wPNFwjh9F0tVXFPYS6J</item>
+        <item>https://docs.google.com/uc?id=1wxFZ4SaODdzWArLrGTCmpMjzdKL9o6N_</item>
+        <item>https://docs.google.com/uc?id=1jexfW4OrPCU9vDruBmrTgA5tgZ90yi84</item>
+        <item>https://docs.google.com/uc?id=1AFb12ceP8DxDw4XKqSNj4MOkA01bqS1Y</item>
+        <item>https://docs.google.com/uc?id=1MmyjgWOYXC3R08ccOlJCmYkr575u3y01</item>
+        <item>https://docs.google.com/uc?id=1F4g9UeE03hrMkSjNM6rSuIAYfPjtHxPo</item>
+        <item>https://docs.google.com/uc?id=1aLdn3bbZ7LSm7VbF_sB4qB70XnC59XLa</item>
+        <item>https://docs.google.com/uc?id=1tOgtOTQf8Vx1-_FHU-le35STonio9G-c</item>
+    </string-array>
+
+    <string-array name="image_pic2">
+        <item>https://docs.google.com/uc?id=1XFSsH0_W4o7IbAgjT1ayriphTiHeRxF1</item>
+        <item>https://docs.google.com/uc?id=1kuTkBznn46dasQZAgsAjR-wnmIaXxO7O</item>
+        <item>https://docs.google.com/uc?id=1muZIaXf3R79rABQScFLzdc_0RnpfRiMN</item>
+        <item>https://docs.google.com/uc?id=1gOo2cpcb1pU9n29pdKqkT-fn6ulZzB5r</item>
+        <item>https://docs.google.com/uc?id=18QbiYqzwXFs9WY39jzGZI0r5XSx3EtLC</item>
+        <item>https://docs.google.com/uc?id=1TfugniZkAMqbY9VFb1Zxv1Gjszld0kc3</item>
+        <item>https://docs.google.com/uc?id=1ztxB26bLG4g0mHa0EipC9uhJwQkaKyyj</item>
+        <item>https://docs.google.com/uc?id=1C7melwI-NQuX_tI7aGZYk5NIO_d-D2gp</item>
+        <item>https://docs.google.com/uc?id=18Dhhv9p6q73_NyivLYTnbbnSbXnGLgEC</item>
+        <item>https://docs.google.com/uc?id=1NLv_FYNfQs6ZZ59s4dfjVsEHPdm0TIkw</item>
+    </string-array>
+
+    <string-array name="image_pic3">
+        <item>https://docs.google.com/uc?id=1Bhyf1Pp7BSLBhIH-oHd_KB4ROUnOK0El</item>
+        <item>https://docs.google.com/uc?id=1V_inM_rKIMYejTzAw5REMfbSTjJrw9Au</item>
+        <item>https://docs.google.com/uc?id=1uXTC48qb0-cy3hnfMUaA681JwSLT_4In</item>
+        <item>https://docs.google.com/uc?id=1oJT5M_OeEZ4xPJ_Sg48KmwU-xC_O8gnR</item>
+        <item>https://docs.google.com/uc?id=1A83kwln2y7NGpzFUHx7tNmR8aoP4iB-p</item>
+        <item>https://docs.google.com/uc?id=1ynZ2VNYG9hB9vjtMlTi3LUBsTX2I-W8M</item>
+        <item>https://docs.google.com/uc?id=1vOzdCiLkF5M2HnaO5_Qw97Uv50bGcSkl</item>
+        <item>https://docs.google.com/uc?id=1F_WbrST5yLieGQTYuYQCyNgoIx5bNwpV</item>
+        <item>https://docs.google.com/uc?id=1OZ_SqADoN-szxnTph0ftA4HmkFn1YqBo</item>
+        <item>https://docs.google.com/uc?id=1hS5DOecHdhgFlGE2lfmYMjnmq16pJlPZ</item>
+    </string-array>
+
+
+
 </resources>
