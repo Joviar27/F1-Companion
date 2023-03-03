@@ -13,6 +13,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    
+    <style name="Theme.F1Companion.Splash">
+        <item name="android:statusBarColor">@color/dusty_beige</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
 
     <style name="Title">
         <item name="android:layout_width">0dp</item>
