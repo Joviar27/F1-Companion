@@ -4,6 +4,22 @@
     <string name="driver_lineup">Driver Lineup</string>
     <string name="mini_gallery">Mini Gallery</string>
 
+    <string name="base">Base</string>
+    <string name="team_chief">Team Chief</string>
+    <string name="technical_chief">Technical Chief</string>
+    <string name="chassis">Chassis</string>
+    <string name="first_team_entry">First Team Entry</string>
+    <string name="world_championships">World Championships</string>
+    <string name="highest_race_finish">Highest Race Finish</string>
+    <string name="pole_positions">Pole Positions</string>
+
+    <string name="sample_large">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.\n\nNulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.\n\nVivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. N</string>
+    <string name="sample_medium">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nDonec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo li</string>
+    <string name="sample_small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</string>
+    <string name="about">About</string>
+    <string name="creator_name">Joy Vianoktya Aristides</string>
+    <string name="creator_email">joyvianoktya27@gmail.com</string>
+
     <string-array name="image_thumbnail">
         <item>https://docs.google.com/uc?id=1POOivPRB9dm1RRkGBfoOMfgAMnqu62UP</item>
         <item>https://docs.google.com/uc?id=1SmdnNtZ-Rb6OmiwQueXlrh-g1HWKsFmo</item>
