@@ -299,6 +299,19 @@ In 2021, Williams was purchased by US investment firm Dorilton Capital, signalin
     </string-array>
 
     <string-array name="detail_team_WC">
+        <item>N/A</item>
+        <item>2</item>
+        <item>N/A</item>
+        <item>N/A</item>
+        <item>16</item>
+        <item>N/A</item>
+        <item>8</item>
+        <item>8</item>
+        <item>5</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="detail_team_highest">
         <item>1 (X1)</item>
         <item>1 (X21)</item>
         <item>1 (X1)</item>
