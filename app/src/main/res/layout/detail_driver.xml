@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ViewGroup"
+    android:background="@color/dusty_beige">
+
+    <TextView
+        android:id="@+id/tv_title_driver"
+        style="@style/Title.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/driver_lineup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_con_driver1"
+        style="@style/Iv_ConDriver"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_driver"/>
+
+    <ImageView
+        android:id="@+id/iv_driver1"
+        style="@style/Iv_Driver"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_con_driver1"
+        app:layout_constraintStart_toStartOf="@+id/iv_con_driver1"
+        app:layout_constraintTop_toTopOf="@+id/iv_con_driver1"
+        tools:src="@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/tv_name_driver1"
+        style="@style/Title.Semibold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_con_driver1"
+        app:layout_constraintStart_toEndOf="@+id/iv_driver1"
+        app:layout_constraintTop_toTopOf="@+id/iv_con_driver1"
+        tools:text="Driver Name" />
+
+    <TextView
+        android:id="@+id/tv_desc_driver1"
+        style="@style/TextContent.Smaller"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_con_driver1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_con_driver1"
+        app:layout_constraintStart_toEndOf="@+id/iv_driver1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_driver1"
+        tools:text="@string/sample_medium" />
+
+    <ImageView
+        android:id="@+id/iv_con_driver2"
+        style="@style/Iv_ConDriver"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_con_driver1"/>
+
+    <ImageView
+        android:id="@+id/iv_driver2"
+        style="@style/Iv_Driver"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_con_driver2"
+        app:layout_constraintStart_toStartOf="@+id/iv_con_driver2"
+        app:layout_constraintTop_toTopOf="@+id/iv_con_driver2"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_name_driver2"
+        style="@style/Title.Semibold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_con_driver2"
+        app:layout_constraintStart_toEndOf="@+id/iv_driver2"
+        app:layout_constraintTop_toTopOf="@+id/iv_con_driver2"
+        tools:text="Driver Name" />
+
+    <TextView
+        android:id="@+id/tv_desc_driver2"
+        style="@style/TextContent.Smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_con_driver2"
+        app:layout_constraintEnd_toEndOf="@+id/iv_con_driver2"
+        app:layout_constraintStart_toEndOf="@+id/iv_driver2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_driver2"
+        tools:text="@string/sample_medium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
