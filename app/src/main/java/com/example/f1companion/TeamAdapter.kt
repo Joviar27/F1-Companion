@@ -2,15 +2,13 @@ package com.example.f1companion
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.f1companion.databinding.ViewholderBinding
 
 class TeamAdapter(
     private val TeamList : ArrayList<Team>,
-    private val onItemClicked : (Team) -> Unit
+    private val onItemClicked : (Int) -> Unit
 ) : RecyclerView.Adapter<TeamAdapter.TeamViewHolder>() {
 
     inner class TeamViewHolder(var binding: ViewholderBinding) : RecyclerView.ViewHolder(binding.root)
@@ -28,11 +26,10 @@ class TeamAdapter(
         Glide.with(holder.itemView.context)
             .load(thumbnailPic)
             .placeholder(R.color.dusty_beige)
-            .transition(DrawableTransitionOptions.withCrossFade())
             .into(holder.binding.ivThumbnail)
 
         holder.itemView.setOnClickListener {
-            onItemClicked(TeamList[position])
+            onItemClicked(position)
         }
     }
 
