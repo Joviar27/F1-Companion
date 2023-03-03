@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ViewGroup">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="174dp" />
+
+    <TextView
+        style="@style/TextTable.left"
+        android:id="@+id/tv_bio_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/base"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_bio_teamChief"
+        style="@style/TextTable.left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_base"
+        android:text="@string/team_chief"/>
+
+    <TextView
+        android:id="@+id/tv_bio_technical"
+        style="@style/TextTable.left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_teamChief"
+        android:text="@string/technical_chief"/>
+
+    <TextView
+        android:id="@+id/tv_bio_chassis"
+        style="@style/TextTable.left"
+        android:text="@string/chassis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_technical" />
+
+    <TextView
+        android:id="@+id/tv_bio_powerUnit"
+        style="@style/TextTable.left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_chassis"
+        tools:text="Power Unit" />
+
+    <TextView
+        android:id="@+id/tv_bio_entry"
+        style="@style/TextTable.left"
+        android:text="@string/first_team_entry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_powerUnit" />
+
+    <TextView
+        android:id="@+id/tv_bio_WC"
+        style="@style/TextTable.left"
+        android:text="@string/world_championships"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_entry"/>
+
+    <TextView
+        android:id="@+id/tv_bio_highest"
+        style="@style/TextTable.left"
+        android:text="@string/highest_race_finish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_WC" />
+
+    <TextView
+        android:id="@+id/tv_bio_pole"
+        style="@style/TextTable.left"
+        android:text="@string/pole_positions"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_highest"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_bio_FL"
+        style="@style/TextTable.left"
+        app:layout_constraintTop_toBottomOf="@id/tv_bio_pole"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Fastest Laps"/>
+
+    <TextView
+        android:id="@+id/tv_val_base"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Value Sample"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_val_teamChief"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_val_base"
+        tools:text="Value Sample" />
+
+    <TextView
+        android:id="@+id/tv_val_technical"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_val_teamChief"
+        tools:text="Value Sample" />
+
+    <TextView
+        android:id="@+id/tv_val_chassis"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_val_technical"
+        tools:text="Value Sample" />
+
+    <TextView
+        android:id="@+id/tv_val_PU"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_val_chassis"
+        tools:text="Value Sample" />
+
+    <TextView
+        android:id="@+id/tv_val_entry"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_val_PU"
+        tools:text="Value Sample" />
+
+    <TextView
+        android:id="@+id/tv_val_WC"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_val_entry"
+        tools:text="Value Sample" />
+
+    <TextView
+        android:id="@+id/tv_val_highest"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_val_WC"
+        tools:text="Value Sample" />
+
+    <TextView
+        android:id="@+id/tv_val_pole"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_val_highest"
+        tools:text="Value Sample" />
+
+    <TextView
+        android:id="@+id/tv_val_FL"
+        style="@style/TextTable.right"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_val_pole"
+        tools:text="Value Sample" />
+</androidx.constraintlayout.widget.ConstraintLayout>
