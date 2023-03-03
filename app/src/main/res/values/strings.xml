@@ -362,18 +362,31 @@ In 2021, Williams was purchased by US investment firm Dorilton Capital, signalin
         <item>Alexander Albon</item>
     </string-array>
 
+    <string-array name="detail_driver2_name">
+        <item>Lance Stroll</item>
+        <item>Pierre Gasly</item>
+        <item>Zhou Guanyu</item>
+        <item>Nyck De Vries</item>
+        <item>Carlos Sainz</item>
+        <item>Nico Hulkenberg</item>
+        <item>Oscar Piastri</item>
+        <item>George Russell</item>
+        <item>Sergio Perez</item>
+        <item>Logan Sargeant</item>
+    </string-array>
+
     <string-array name="detail_driver1_overview">
         <item>Spanish Formula One racing driver who was born on July 29, 1981, in Oviedo, Spain. He has won the Formula One World Championship twice, in 2005 and 2006, and is widely regarded as one of the greatest drivers of his generation.
-
+\n\n
 Alonso is known for his aggressive driving style, his ability to extract the maximum performance from his car, and his tactical nous. He is widely regarded as one of the most complete racing drivers of his generation, and has a passionate following among motorsport fans around the world.</item>
         <item>French racing driver who was born on September 17, 1996, in Évreux, France. Ocon joined Force India as a race driver in 2017, and scored his first podium finish at the 2017 Belgian Grand Prix. He then spent a year as a reserve driver for Mercedes in 2019, before returning to racing full-time with Alpine F1 Team in 2020.
-
+\n\n
 Ocon is known for his aggressive and determined driving style, and is highly regarded for his technical abilities and racecraft. He is seen as one of the rising stars of Formula One and is expected to continue to make an impact in the sport for years to come.</item>
         <item>Finnish racing driver who was born on August 28, 1989, in Nastola, Finland. Bottas started his racing career in karting before moving up to single-seater racing, competing in various junior categories before making his way to Formula One.
-
+\n\n
 Bottas made his Formula One debut with Williams in 2013, scoring his first championship points in just his third race. He then signed by Mercedes in 2017, where he has since enjoyed a successful career, finishing as runner-up in the drivers' championship in 2019 and 2020.</item>
         <item>Japanese racing driver who was born on May 11, 2000, in Sagamihara, Japan. Tsunoda made his Formula One debut in 2021 with Scuderia AlphaTauri, becoming the first Japanese driver to compete in the sport since Kamui Kobayashi in 2014.
-
+\n\n
 Before making it to Formula One, Tsunoda competed in the FIA Formula 2 Championship, where he finished third in the 2020 season, winning three races and finishing on the podium nine times.</item>
         <item>Monégasque racing driver who was born on October 16, 1997, in Monte Carlo, Monaco. Lecrerc won the GP3 Series championship in 2016 and the FIA Formula 2 Championship in 2017.
 
@@ -395,7 +408,7 @@ In 2016, Verstappen was promoted to the Red Bull Racing team, where he has remai
 He competed in a variety of junior series before making his Formula One debut with Toro Rosso in 2019. He impressed in his rookie season, scoring points in his first three races and finishing the season with 92 points and 8th place in the Drivers' Championship.   </item>
     </string-array>
 
-    <string-array name="detail_driver2_name">
+    <string-array name="detail_driver2_overview">
         <item>Canadian racing driver who was born on October 29, 1998, in Montreal, Canada, and is the son of billionaire businessman Lawrence Stroll. Stroll made his Formula One debut with the Williams team in 2017, becoming the second-youngest driver in the history of the sport at the age of 18.
 
 Stroll's performances have been somewhat inconsistent over the years, with occasional highlights being overshadowed by a string of retirements and low finishes. However, he has shown great potential and has demonstrated his speed and racecraft.</item>
