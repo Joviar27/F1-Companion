@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.f1companion.databinding.MainBinding
 
@@ -33,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId==R.id.about_page){
             val moveToAbout = Intent(this@MainActivity, AboutActivity::class.java)
+            startActivity(moveToAbout)
         }
         return super.onOptionsItemSelected(item)
     }
@@ -43,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         val shortOverview = resources.getStringArray(R.array.thumbnail_overview)
         val thumbnailPic = resources.getStringArray(R.array.image_thumbnail)
 
-        var teamList = ArrayList<Team>()
+        val teamList = ArrayList<Team>()
 
         for (index in name.indices) {
             teamList.add(
@@ -59,10 +58,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRecyclerView(teamList : ArrayList<Team>){
         binding.rvF1team.layoutManager = LinearLayoutManager(this@MainActivity)
-        val TeamAdapter = TeamAdapter(teamList, onItemClicked = {
+        val teamAdapter = TeamAdapter(teamList, onItemClicked = {
             toDetailPage(it)
         })
-        binding.rvF1team.adapter = TeamAdapter
+        binding.rvF1team.adapter = teamAdapter
     }
 
     private fun toDetailPage(position : Int){
