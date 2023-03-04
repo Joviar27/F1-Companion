@@ -440,4 +440,16 @@ In 2021, Perez joined Red Bull Racing as the teammate of Max Verstappen. He had 
 In 2020, Sargeant raced FIA Formula 3 Championship and finished as the runner-up in the Drivers\' Championship, with three wins and ten podium finishes to his name. He then made the step up to the FIA Formula 2 Championship in 2021, where he is racing for the Charouz Racing System team.</item>
     </string-array>
 
+    <string-array name="page_link">
+        <item>https://www.formula1.com/en/teams/Aston-Martin.html</item>
+        <item>https://www.formula1.com/en/teams/Alpine.html</item>
+        <item>https://www.formula1.com/en/teams/Alfa-Romeo-Racing.html</item>
+        <item>https://www.formula1.com/en/teams/AlphaTauri.html</item>
+        <item>https://www.formula1.com/en/teams/Ferrari.html</item>
+        <item>https://www.formula1.com/en/teams/Haas-F1-Team.html</item>
+        <item>https://www.formula1.com/en/teams/McLaren.html</item>
+        <item>https://www.formula1.com/en/teams/Mercedes.html</item>
+        <item>https://www.formula1.com/en/teams/Red-Bull-Racing.html</item>
+        <item>https://www.formula1.com/en/teams/Williams.html</item>
+    </string-array>
 </resources>
