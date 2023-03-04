@@ -46,7 +46,7 @@
         style="@style/TextTable.left"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_bio_chassis"
-        tools:text="Power Unit" />
+        android:text="Power Unit" />
 
     <TextView
         android:id="@+id/tv_bio_entry"
@@ -81,7 +81,7 @@
         style="@style/TextTable.left"
         app:layout_constraintTop_toBottomOf="@id/tv_bio_pole"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Fastest Laps"/>
+        android:text="Fastest Laps"/>
 
     <TextView
         android:id="@+id/tv_val_base"
