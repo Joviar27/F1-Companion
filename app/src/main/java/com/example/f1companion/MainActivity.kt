@@ -97,7 +97,8 @@ class MainActivity : AppCompatActivity() {
             driver2Pic = resources.getStringArray(R.array.image_driver2)[index],
             galleryPic1 = resources.getStringArray(R.array.image_pic1)[index],
             galleryPic2 = resources.getStringArray(R.array.image_pic2)[index],
-            galleryPic3 = resources.getStringArray(R.array.image_pic3)[index]
+            galleryPic3 = resources.getStringArray(R.array.image_pic3)[index],
+            pageLink = resources.getStringArray(R.array.page_link)[index]
         )
     }
 }
