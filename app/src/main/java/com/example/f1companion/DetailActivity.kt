@@ -7,11 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
-import com.example.f1companion.databinding.DetailBinding
-import com.example.f1companion.databinding.DetailBioBinding
-import com.example.f1companion.databinding.DetailDriverBinding
-import com.example.f1companion.databinding.DetailGalleryBinding
-import com.example.f1companion.databinding.DetailOverviewBinding
+import com.example.f1companion.databinding.*
 import jp.wasabeef.transformers.glide.RoundedCornersTransformation
 
 class DetailActivity : AppCompatActivity() {
@@ -27,7 +23,13 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = DetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        overviewBinding = DetailOverviewBinding.inflate(layoutInflater)
+        bioBinding = DetailBioBinding.inflate(layoutInflater)
+        driverBinding = DetailDriverBinding.inflate(layoutInflater)
+        galleryBinding = DetailGalleryBinding.inflate(layoutInflater)
 
         val team = if(Build.VERSION.SDK_INT>=33){
             intent.getParcelableExtra(EXTRA_TEAM, Team::class.java)
@@ -36,8 +38,8 @@ class DetailActivity : AppCompatActivity() {
             intent.getParcelableExtra(EXTRA_TEAM)
         }
 
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back);
-        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         if (team != null) {
             Glide.with(this@DetailActivity)

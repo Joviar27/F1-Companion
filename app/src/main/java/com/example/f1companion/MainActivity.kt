@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = MainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.rvF1team.setHasFixedSize(true)

@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
 import com.example.f1companion.databinding.AboutBinding
+import com.example.f1companion.databinding.MainBinding
 import jp.wasabeef.transformers.glide.RoundedCornersTransformation
 
 class AboutActivity : AppCompatActivity(){
@@ -15,6 +16,7 @@ class AboutActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = AboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         Glide.with(this@AboutActivity)
@@ -24,8 +26,8 @@ class AboutActivity : AppCompatActivity(){
             .transition(DrawableTransitionOptions.withCrossFade())
             .into(binding.ivProfil)
 
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back);
-        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
