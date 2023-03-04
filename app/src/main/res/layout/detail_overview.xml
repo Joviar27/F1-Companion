@@ -10,7 +10,6 @@
         android:id="@+id/iv_header"
         android:layout_width="0dp"
         android:layout_height="330dp"
-        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/tv_name_team"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
