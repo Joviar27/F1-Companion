@@ -1,16 +1,16 @@
 package com.example.f1companion
 
-import android.content.ContentValues.TAG
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.bumptech.glide.request.RequestOptions
 import com.example.f1companion.databinding.*
-import jp.wasabeef.transformers.glide.RoundedCornersTransformation
+
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: DetailBinding
@@ -37,19 +37,26 @@ class DetailActivity : AppCompatActivity() {
         if (team != null) {
             Glide.with(this@DetailActivity)
                 .load(team.headerPic)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(100,0)))
+                .transform(CenterCrop(), RoundedCorners(60))
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(binding.includeOverview.ivHeader)
 
             Glide.with(this@DetailActivity)
                 .load(team.bannerPic)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(40,0)))
+                .transform(CenterCrop(), RoundedCorners(40))
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(binding.includeOverview.ivBanner)
             
 
             binding.includeOverview.tvNameTeam.text = team.fullName
             binding.includeOverview.tvDescTeam.text = team.longOverview
+
+            binding.includeOverview.actionShare.setOnClickListener{
+                val sendIntent = Intent(Intent.ACTION_SEND)
+                sendIntent.putExtra(Intent.EXTRA_TEXT, team.pageLink)
+                sendIntent.type = "text/plain"
+                startActivity(sendIntent)
+            }
 
             binding.includeBio.tvValBase.text = team.bioBase
             binding.includeBio.tvValTeamChief.text = team.bioTeamChief
@@ -66,8 +73,7 @@ class DetailActivity : AppCompatActivity() {
             binding.includeDriver.tvDescDriver1.text = team.driver1Desc
             Glide.with(this@DetailActivity)
                 .load(team.driver1Pic)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
-                .placeholder(R.color.whitish_gray)
+                .transform(CenterCrop(), RoundedCorners(40))
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(binding.includeDriver.ivDriver1)
 
@@ -75,29 +81,25 @@ class DetailActivity : AppCompatActivity() {
             binding.includeDriver.tvDescDriver2.text = team.driver2Desc
             Glide.with(this@DetailActivity)
                 .load(team.driver2Pic)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
-                .placeholder(R.color.whitish_gray)
+                .transform(CenterCrop(), RoundedCorners(40))
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(binding.includeDriver.ivDriver2)
 
             Glide.with(this@DetailActivity)
                 .load(team.galleryPic1)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
-                .placeholder(R.color.light_taupe)
+                .transform(CenterCrop(), RoundedCorners(40))
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(binding.includeGallery.ivPic1)
 
             Glide.with(this@DetailActivity)
                 .load(team.galleryPic2)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
-                .placeholder(R.color.light_taupe)
+                .transform(CenterCrop(), RoundedCorners(40))
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(binding.includeGallery.ivPic2)
 
             Glide.with(this@DetailActivity)
                 .load(team.galleryPic3)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
-                .placeholder(R.color.light_taupe)
+                .transform(CenterCrop(), RoundedCorners(40))
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(binding.includeGallery.ivPic3)
         }
