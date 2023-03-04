@@ -1,7 +1,9 @@
 package com.example.f1companion
 
+import android.content.ContentValues.TAG
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -12,10 +14,6 @@ import jp.wasabeef.transformers.glide.RoundedCornersTransformation
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: DetailBinding
-    private lateinit var overviewBinding: DetailOverviewBinding
-    private lateinit var bioBinding: DetailBioBinding
-    private lateinit var driverBinding: DetailDriverBinding
-    private lateinit var galleryBinding: DetailGalleryBinding
 
     companion object{
         const val EXTRA_TEAM = "default"
@@ -25,11 +23,6 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        overviewBinding = DetailOverviewBinding.inflate(layoutInflater)
-        bioBinding = DetailBioBinding.inflate(layoutInflater)
-        driverBinding = DetailDriverBinding.inflate(layoutInflater)
-        galleryBinding = DetailGalleryBinding.inflate(layoutInflater)
 
         val team = if(Build.VERSION.SDK_INT>=33){
             intent.getParcelableExtra(EXTRA_TEAM, Team::class.java)
@@ -44,63 +37,69 @@ class DetailActivity : AppCompatActivity() {
         if (team != null) {
             Glide.with(this@DetailActivity)
                 .load(team.headerPic)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(20,0)))
-                .placeholder(R.color.light_taupe)
+                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(100,0)))
                 .transition(DrawableTransitionOptions.withCrossFade())
-                .into(overviewBinding.ivHeader)
+                .into(binding.includeOverview.ivHeader)
 
             Glide.with(this@DetailActivity)
                 .load(team.bannerPic)
-                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(20,0)))
-                .placeholder(R.color.taupe)
+                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(40,0)))
                 .transition(DrawableTransitionOptions.withCrossFade())
-                .into(overviewBinding.ivBanner)
+                .into(binding.includeOverview.ivBanner)
+            
 
-            overviewBinding.tvNameTeam.text = team.fullName
-            overviewBinding.tvDescTeam.text = team.longOverview
+            binding.includeOverview.tvNameTeam.text = team.fullName
+            binding.includeOverview.tvDescTeam.text = team.longOverview
 
-            bioBinding.tvValBase.text = team.bioBase
-            bioBinding.tvValTeamChief.text = team.bioTeamChief
-            bioBinding.tvValTechnical.text = team.bioTechnical
-            bioBinding.tvValChassis.text = team.bioChassis
-            bioBinding.tvValPU.text = team.bioPU
-            bioBinding.tvValEntry.text = team.bioEntry
-            bioBinding.tvValWC.text = team.bioWC
-            bioBinding.tvValHighest.text = team.bioHighest
-            bioBinding.tvValPole.text = team.bioPoles
-            bioBinding.tvValFL.text = team.bioFL
+            binding.includeBio.tvValBase.text = team.bioBase
+            binding.includeBio.tvValTeamChief.text = team.bioTeamChief
+            binding.includeBio.tvValTechnical.text = team.bioTechnical
+            binding.includeBio.tvValChassis.text = team.bioChassis
+            binding.includeBio.tvValPU.text = team.bioPU
+            binding.includeBio.tvValEntry.text = team.bioEntry
+            binding.includeBio.tvValWC.text = team.bioWC
+            binding.includeBio.tvValHighest.text = team.bioHighest
+            binding.includeBio.tvValPole.text = team.bioPoles
+            binding.includeBio.tvValFL.text = team.bioFL
 
-            driverBinding.tvNameDriver1.text = team.driver1Name
-            driverBinding.tvDescDriver1.text = team.driver1Desc
+            binding.includeDriver.tvNameDriver1.text = team.driver1Name
+            binding.includeDriver.tvDescDriver1.text = team.driver1Desc
             Glide.with(this@DetailActivity)
                 .load(team.driver1Pic)
                 .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
                 .placeholder(R.color.whitish_gray)
                 .transition(DrawableTransitionOptions.withCrossFade())
-                .into(driverBinding.ivDriver1)
+                .into(binding.includeDriver.ivDriver1)
 
-            driverBinding.tvNameDriver2.text = team.driver2Name
-            driverBinding.tvDescDriver1.text = team.driver2Desc
+            binding.includeDriver.tvNameDriver2.text = team.driver2Name
+            binding.includeDriver.tvDescDriver2.text = team.driver2Desc
             Glide.with(this@DetailActivity)
                 .load(team.driver2Pic)
                 .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
                 .placeholder(R.color.whitish_gray)
                 .transition(DrawableTransitionOptions.withCrossFade())
-                .into(driverBinding.ivDriver2)
+                .into(binding.includeDriver.ivDriver2)
+
+            Glide.with(this@DetailActivity)
+                .load(team.galleryPic1)
+                .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
+                .placeholder(R.color.light_taupe)
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .into(binding.includeGallery.ivPic1)
 
             Glide.with(this@DetailActivity)
                 .load(team.galleryPic2)
                 .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
                 .placeholder(R.color.light_taupe)
                 .transition(DrawableTransitionOptions.withCrossFade())
-                .into(galleryBinding.ivPic2)
+                .into(binding.includeGallery.ivPic2)
 
             Glide.with(this@DetailActivity)
                 .load(team.galleryPic3)
                 .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(13,0)))
                 .placeholder(R.color.light_taupe)
                 .transition(DrawableTransitionOptions.withCrossFade())
-                .into(galleryBinding.ivPic3)
+                .into(binding.includeGallery.ivPic3)
         }
     }
 
