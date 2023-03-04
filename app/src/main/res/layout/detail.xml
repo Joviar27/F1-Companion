@@ -12,13 +12,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include layout="@layout/detail_overview"/>
+        <include
+            android:id="@+id/include_overview"
+            layout="@layout/detail_overview"/>
 
-        <include layout="@layout/detail_bio"/>
+        <include
+            android:id="@+id/include_bio"
+            layout="@layout/detail_bio"/>
 
-        <include layout="@layout/detail_driver"/>
+        <include
+            android:id="@+id/include_driver"
+            layout="@layout/detail_driver"/>
 
-        <include layout="@layout/detail_gallery"/>
+        <include
+            android:id="@+id/include_gallery"
+            layout="@layout/detail_gallery"/>
     </LinearLayout>
     
 </ScrollView>
