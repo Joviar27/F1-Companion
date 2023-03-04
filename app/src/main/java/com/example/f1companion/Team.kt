@@ -34,5 +34,7 @@ data class Team (
 
     val galleryPic1 : String = "default",
     val galleryPic2 : String = "default",
-    val galleryPic3 : String = "default"
+    val galleryPic3 : String = "default",
+
+    val pageLink : String = "default"
     ) : Parcelable
