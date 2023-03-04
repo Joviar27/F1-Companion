@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         val team = getTeam(position)
         val moveWithTeam = Intent(this@MainActivity, DetailActivity::class.java)
         moveWithTeam.putExtra(DetailActivity.EXTRA_TEAM,team)
+        startActivity(moveWithTeam)
     }
 
     //Mengambil data dari tim yang dipilih item recyclerview nya
